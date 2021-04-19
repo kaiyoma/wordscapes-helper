@@ -1,0 +1,18 @@
+{
+  "overrides": [
+    {
+      "files": ["**/*.js"],
+      "extends": ["arista-js"]
+    },
+    {
+      "files": ["**/*.ts"],
+      "extends": ["arista-ts"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "no-console": "off"
+      }
+    }
+  ]
+}

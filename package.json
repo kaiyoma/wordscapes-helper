@@ -1,0 +1,47 @@
+{
+  "name": "wordscapes-helper",
+  "version": "0.1.0",
+  "description": "Command-line tool to offer suggestions for Wordscapes puzzles",
+  "author": "kyle.getz@gmail.com",
+  "homepage": "http://www.kylegetz.me",
+  "license": "MIT",
+  "scripts": {
+    "build": "bash build.sh",
+    "build:docs": "typedoc",
+    "build:tool": "babel src --out-dir dist --extensions .ts",
+    "clean": "rimraf .jest-cache *.log coverage dist docs",
+    "lint": "eslint --max-warnings 0 --ext .js,.ts *.js src",
+    "prettier": "prettier --check *.js *.json src",
+    "test": "jest --coverage",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cli-progress": "3.9.0"
+  },
+  "devDependencies": {
+    "@arista/prettier-config": "1.1.4",
+    "@babel/cli": "7.13.10",
+    "@babel/core": "7.13.14",
+    "@babel/preset-env": "7.13.12",
+    "@babel/preset-typescript": "7.13.0",
+    "@types/cli-progress": "3.9.1",
+    "@types/jest": "26.0.22",
+    "@types/node": "14.14.37",
+    "@typescript-eslint/eslint-plugin": "4.19.0",
+    "@typescript-eslint/parser": "4.19.0",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "26.6.3",
+    "eslint": "7.23.0",
+    "eslint-config-arista-js": "2.0.0",
+    "eslint-config-arista-ts": "2.0.0",
+    "eslint-plugin-arista": "0.2.2",
+    "eslint-plugin-import": "2.22.1",
+    "jest": "26.6.3",
+    "jest-standard-reporter": "2.0.0",
+    "prettier": "2.2.1",
+    "rimraf": "3.0.2",
+    "tslib": "2.1.0",
+    "typedoc": "0.20.32",
+    "typescript": "4.2.3"
+  }
+}
