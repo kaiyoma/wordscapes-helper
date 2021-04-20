@@ -61,12 +61,12 @@ rl.prompt();
 // Read input from the user and print matching words
 rl.on('line', (line) => {
   const tokens = line.split(' ');
-  const puzzle = tokens[0];
+  const puzzle = computeAlphabet(tokens[0]);
   const regex = tokens[1] ? new RegExp('^' + tokens[1].replace(/_/g, '[a-z]') + '$') : null;
   console.log();
 
   for (const word of Object.keys(dictionary)) {
-    if (isContained(computeAlphabet(puzzle), dictionary[word])) {
+    if (isContained(puzzle, dictionary[word])) {
       if (!regex || regex.test(word)) {
         console.log(word);
       }
