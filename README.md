@@ -62,13 +62,14 @@ $ yarn run build
 yarn run v1.22.5
 $ bash build.sh
 PASS clean (1s)
-PASS prettier (2s)
-PASS lint (7s)
-PASS test (9s)
-PASS type-check (6s)
-PASS build:tool (3s)
-PASS build:docs (9s)
+PASS prettier (0s)
+PASS lint (4s)
+PASS test (2s)
+PASS type-check (4s)
+PASS build:tool (1s)
+PASS build:docs (5s)
 
-Total build time: 38s
-Done in 37.80s.
+Total build time: 17s
+Done in 16.41s.
+
 ```
