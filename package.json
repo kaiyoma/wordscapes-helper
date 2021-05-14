@@ -10,6 +10,7 @@
     "build:docs": "typedoc",
     "build:tool": "babel src --out-dir dist --extensions .ts",
     "clean": "rimraf .jest-cache *.log coverage dist docs",
+    "find-words": "node dist/find-words.js src/words.txt",
     "lint": "eslint --max-warnings 0 --ext .js,.ts *.js src",
     "prettier": "prettier --check *.js *.json src",
     "test": "jest --coverage",
