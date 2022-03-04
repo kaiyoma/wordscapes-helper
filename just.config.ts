@@ -24,7 +24,7 @@ function registerTasks(tasks: Tasks): void {
 
 registerTasks({
   'build:docs': 'typedoc',
-  'build:tool': 'babel src --out-dir dist --extensions .ts',
+  'build:tool': 'node esbuild.config.js',
   'clean': 'rimraf .jest-cache *.log coverage dist docs',
   'lint': 'eslint --max-warnings 0 --ext .js,.ts *.js src',
   'prettier': 'prettier --check *.js *.json src',
