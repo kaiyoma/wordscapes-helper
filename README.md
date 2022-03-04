@@ -14,8 +14,8 @@ installed, this will build and run the tool:
 
 ```text
 pnpm install
-npm run build:tool
-node dist/find-words.js src/words.txt
+npx just build:tool
+npm run find-words
 ```
 
 After reading the words list and creating an internal dictionary structure, the tool will display a
