@@ -9,12 +9,12 @@ typedoc, which are all used very frequently in modern web development.
 
 ## Running
 
-Assuming that you already have [Node](https://nodejs.org/en/) and [yarn](https://yarnpkg.com/)
+Assuming that you already have [Node](https://nodejs.org/en/) and [pnpm](https://pnpm.io/)
 installed, this will build and run the tool:
 
 ```text
-yarn install
-yarn run build:tool
+pnpm install
+npm run build:tool
 node dist/find-words.js src/words.txt
 ```
 
@@ -54,22 +54,24 @@ tate
 ## Developing
 
 If you want to hack on the code a bit, then you'll probably want to familiarize yourself with
-`yarn run build`, which will run all the code quality checks and generate some simple docs in
+`npm run build`, which will run all the code quality checks and generate some simple docs in
 addition to performing the build itself:
 
 ```text
-$ yarn run build
-yarn run v1.22.5
-$ bash build.sh
-PASS clean (1s)
-PASS prettier (0s)
-PASS lint (4s)
-PASS test (2s)
-PASS type-check (4s)
-PASS build:tool (1s)
-PASS build:docs (5s)
-
-Total build time: 17s
-Done in 16.41s.
-
+[4:13:31 PM] ■ started 'build'
+[4:13:31 PM] ■ started 'clean'
+[4:13:31 PM] ■ finished 'clean' in 0.57s
+[4:13:31 PM] ■ started 'lint'
+[4:14:14 PM] ■ finished 'lint' in 42.78s
+[4:14:14 PM] ■ started 'prettier'
+[4:14:15 PM] ■ finished 'prettier' in 1.12s
+[4:14:15 PM] ■ started 'test'
+[4:14:53 PM] ■ finished 'test' in 38.01s
+[4:14:53 PM] ■ started 'type-check'
+[4:14:58 PM] ■ finished 'type-check' in 4.54s
+[4:14:58 PM] ■ started 'build:tool'
+[4:15:17 PM] ■ finished 'build:tool' in 19.09s
+[4:15:17 PM] ■ started 'build:docs'
+[4:15:30 PM] ■ finished 'build:docs' in 13.17s
+[4:15:30 PM] ■ finished 'build' in 119.29s
 ```
